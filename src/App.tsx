@@ -117,9 +117,7 @@ export default function App() {
            <button 
              onClick={handleInstall}
              disabled={installState === 'downloading'}
-             className={`w-full text-white py-2.5 rounded-lg font-medium text-[15px] transition-colors flex items-center justify-center gap-2 ${
-               installState === 'installed' ? 'bg-gray-800 hover:bg-gray-700' : 'bg-[#01875F] active:bg-[#01704e] disabled:bg-[#01704e]/80'
-             }`}
+             className="w-full text-white py-2.5 rounded-lg font-medium text-[15px] transition-colors flex items-center justify-center gap-2 bg-[#01875F] active:bg-[#01704e] disabled:bg-[#01704e]/80"
            >
               {installState === 'idle' && 'Install'}
               {installState === 'downloading' && (
